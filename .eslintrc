@@ -3,9 +3,14 @@
   "env": {
     "node": true
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 2020
-  },
-  "parser": "@babel/eslint-parser"
+    "ecmaVersion": 2020,
+    "parser": "@babel/eslint-parser",
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  }
 }

@@ -7,7 +7,7 @@ const fileName = process.argv[3];
 const targetPath = path.resolve(__dirname, "../type-template", fileName);
 const srcPath = path.resolve(__dirname, "./template");
 
-const renderTemplate = (src: string, target: string) => {
+function renderTemplate(src: string, target: string) {
   const stats = fs.statSync(src);
 
   // 递归生成文件
@@ -20,7 +20,7 @@ const renderTemplate = (src: string, target: string) => {
   }
 
   fs.copyFileSync(src, target);
-};
+}
 
 renderTemplate(srcPath, targetPath);
 
