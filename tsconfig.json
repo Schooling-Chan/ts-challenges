@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "es2017",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "es2017"],
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -10,7 +10,8 @@
     "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "allowJs": true
+    "allowJs": true,
+    "typeRoots": ["node_modules/@types"]
   },
   "exclude": ["node_modules", "dist"]
 }
