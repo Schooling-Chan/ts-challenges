@@ -1,1 +1,1 @@
-type HelloWorld1 = string; // expected to be a string
+type Length<T extends Readonly<any[]>> = T["length"];
