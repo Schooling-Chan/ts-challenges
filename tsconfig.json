@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "target": "es2017",
-    "lib": ["ESNext", "es2017"],
+    "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -13,5 +11,6 @@
     "allowJs": true,
     "typeRoots": ["node_modules/@types"]
   },
+  "include": ["scripts/*.ts", "type-template/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

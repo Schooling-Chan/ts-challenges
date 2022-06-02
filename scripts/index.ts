@@ -1,6 +1,5 @@
-import fs from "fs";
-import path from "path";
-import { __dirname } from "./constants";
+const fs = require("fs");
+const path = require("path");
 
 const fileName = process.argv[3];
 
