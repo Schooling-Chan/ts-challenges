@@ -1,4 +1,5 @@
 import type { Equal, Expect } from "@type-challenges/utils";
+import { StartsWith } from "./template";
 
 type cases = [
   Expect<Equal<StartsWith<"abc", "ac">, false>>,
