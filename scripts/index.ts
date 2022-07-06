@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const fileName = process.argv[3];
+const fileName = process.argv[process.argv.length - 1];
 
 const targetPath = path.resolve(__dirname, "../type-template", fileName);
 const srcPath = path.resolve(__dirname, "./template");
